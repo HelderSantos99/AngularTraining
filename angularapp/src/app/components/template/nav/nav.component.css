@@ -1,5 +1,5 @@
 .sidenav {
-  background-color: rgb(185, 94, 94);
+  background-color: rgb(22, 59, 107);
   width: 200px;
 }
 
@@ -8,10 +8,14 @@
 }
 
 .sidenav i {
-  padding-right: 10px;
+  padding-right: 11px;
 }
 
 .content {
   padding: 16px;
-  background-color: white;
+  height: 830px;
+  background-image: url("../../../../assets/images/bg.jpg");
+  background-size: cover;
 }
+
+
