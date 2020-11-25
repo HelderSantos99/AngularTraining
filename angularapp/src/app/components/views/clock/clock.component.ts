@@ -13,11 +13,16 @@ export class ClockComponent implements OnInit {
   ngOnInit(): void {
     setInterval(() => {
       const time = document.querySelector('#time') as HTMLElement;
+      const data = document.querySelector('#date') as HTMLElement;
       const date = new Date();
-      let hours: any = String(date.getHours());
+      let hours: any = date.getHours();
       let minutes: any = date.getMinutes();
       let seconds: any = date.getSeconds();
       let daynight = 'AM';
+
+      const day = String(date.getDate()).padStart(2, '0');
+      const month = String(date.getMonth() + 1).padStart(2, '0');
+      const year = date.getFullYear();
 
       if (hours > 12) {
           daynight = 'PM';
@@ -32,7 +37,9 @@ export class ClockComponent implements OnInit {
       if (seconds < 10) {
           seconds = '0' + seconds;
       }
+
       time.textContent = hours + ':' + minutes + ':' + seconds + ' ' + daynight;
+      data.textContent = day + '/' + month + '/' + year;
     });
   }
 }

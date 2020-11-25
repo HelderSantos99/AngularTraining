@@ -14,7 +14,7 @@
 }
 
 mat-toolbar {
-  background-color: rgb(17, 44, 66);
+  background: linear-gradient(to right, #1488cc, #2b32b2);
 }
 
 .titulo {

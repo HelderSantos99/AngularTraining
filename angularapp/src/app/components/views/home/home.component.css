@@ -7,9 +7,11 @@
 }
 
 .home {
-  background-color: rgb(32, 139, 130);
-  width: 800px;
-  height: 50px;
+  background: linear-gradient(to right, #009fff, #ec2f4b);
+  width: 1000px;
+  height: 80px;
   font-size: 3rem;
   padding: 25px;
+  align-items: flex-end;
+  align-content: center;
 }
