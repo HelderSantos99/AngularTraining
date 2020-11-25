@@ -22,6 +22,8 @@ import { ProgressbarComponent } from './components/views/progressbar/progressbar
 import { CalculatorComponent } from './components/views/calculator/calculator.component';
 import { ImagesliderComponent } from './components/views/imageslider/imageslider.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
