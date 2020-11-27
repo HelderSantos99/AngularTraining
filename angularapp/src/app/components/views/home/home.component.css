@@ -14,4 +14,11 @@
   padding: 25px;
   align-items: flex-end;
   align-content: center;
+  animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+  100%{
+    filter: hue-rotate(360deg);
+  }
 }

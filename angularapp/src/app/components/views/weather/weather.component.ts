@@ -21,10 +21,9 @@ export class WeatherComponent implements OnInit {
   }
 
   getWeatherData(): void {
-    fetch('http://api.openweathermap.org/data/2.5/weather?q=Portugal&appid=55de9cac3f92c224b48df1c8e7b46659')
+    fetch('http://api.openweathermap.org/data/2.5/weather?q=Aveiro&appid=55de9cac3f92c224b48df1c8e7b46659')
     .then(response => response.json())
     .then(data => {this.setWeatherData(data); });
-
   }
 
   setWeatherData(data: any): void{

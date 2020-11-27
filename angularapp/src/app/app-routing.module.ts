@@ -1,5 +1,6 @@
+import { TictactoeComponent } from './components/views/tictactoe/tictactoe.component';
 import { ImagesliderComponent } from './components/views/imageslider/imageslider.component';
-import { ProgressbarComponent } from './components/views/progressbar/progressbar.component';
+import { FormProgressComponent } from './components/views/formprogress/formprogress.component';
 import { CalendarComponent } from './components/views/calendar/calendar.component';
 import { WeatherComponent } from './components/views/weather/weather.component';
 import { HomeComponent } from './components/views/home/home.component';
@@ -28,8 +29,8 @@ const routes: Routes = [
     component: CalendarComponent
   },
   {
-    path: 'progressbar',
-    component: ProgressbarComponent
+    path: 'formprogress',
+    component: FormProgressComponent
   },
   {
     path: 'calculator',
@@ -38,6 +39,10 @@ const routes: Routes = [
   {
     path: 'imageslider',
     component: ImagesliderComponent
+  },
+  {
+    path: 'tictactoe',
+    component: TictactoeComponent
   }
 ];
 

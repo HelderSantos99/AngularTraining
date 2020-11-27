@@ -7,6 +7,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule} from '@angular/material/button';
 import { MatListModule} from '@angular/material/list';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import {MatStepperModule} from '@angular/material/stepper';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
@@ -18,9 +20,10 @@ import { ClockComponent } from './components/views/clock/clock.component';
 import { HomeComponent } from './components/views/home/home.component';
 import { WeatherComponent } from './components/views/weather/weather.component';
 import { CalendarComponent } from './components/views/calendar/calendar.component';
-import { ProgressbarComponent } from './components/views/progressbar/progressbar.component';
+import { FormProgressComponent } from './components/views/formprogress/formprogress.component';
 import { CalculatorComponent } from './components/views/calculator/calculator.component';
 import { ImagesliderComponent } from './components/views/imageslider/imageslider.component';
+import { TictactoeComponent } from './components/views/tictactoe/tictactoe.component';
 
 
 
@@ -34,9 +37,10 @@ import { ImagesliderComponent } from './components/views/imageslider/imageslider
     HomeComponent,
     WeatherComponent,
     CalendarComponent,
-    ProgressbarComponent,
+    FormProgressComponent,
     CalculatorComponent,
-    ImagesliderComponent
+    ImagesliderComponent,
+    TictactoeComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +51,9 @@ import { ImagesliderComponent } from './components/views/imageslider/imageslider
     BrowserAnimationsModule,
     MatSnackBarModule,
     MatButtonModule,
-    MatListModule
+    MatListModule,
+    MatStepperModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

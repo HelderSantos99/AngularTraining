@@ -18,16 +18,21 @@ export class ClockComponent implements OnInit {
       let hours: any = date.getHours();
       let minutes: any = date.getMinutes();
       let seconds: any = date.getSeconds();
-      let daynight = 'AM';
+
+      const weekday = new Array(7);
+      weekday[0] = 'Domingo';
+      weekday[1] = 'Segunda-Feira';
+      weekday[2] = 'Terça-Feira';
+      weekday[3] = 'Quarta-Feira';
+      weekday[4] = 'Quinta-Feira';
+      weekday[5] = 'Sexta-Feira';
+      weekday[6] = 'Sábado';
+      const dia = weekday[date.getDay()];
 
       const day = String(date.getDate()).padStart(2, '0');
       const month = String(date.getMonth() + 1).padStart(2, '0');
       const year = date.getFullYear();
 
-      if (hours > 12) {
-          daynight = 'PM';
-          hours = hours - 12;
-      }
       if (hours < 10) {
           hours = '0' + hours;
       }
@@ -38,8 +43,8 @@ export class ClockComponent implements OnInit {
           seconds = '0' + seconds;
       }
 
-      time.textContent = hours + ':' + minutes + ':' + seconds + ' ' + daynight;
-      data.textContent = day + '/' + month + '/' + year;
+      time.textContent = hours + ':' + minutes + ':' + seconds;
+      data.textContent = dia + ' ' + day + '/' + month + '/' + year;
     });
   }
 }

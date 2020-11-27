@@ -5,8 +5,16 @@
   height: 250px;
   padding-top: 35px;
   background: black;
-  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(8,7,42,1) 75%, rgb(8, 10, 63) 100%);
-  color: white;;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  animation: animate 1.5s linear infinite;
+  color: white;
+  text-align: center;
+}
+
+@keyframes animate {
+  100%{
+    filter: hue-rotate(360deg);
+  }
 }
 
 .weatherWidgetRow{

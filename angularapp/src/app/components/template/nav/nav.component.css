@@ -2,6 +2,7 @@
   background: linear-gradient(to right, #8e0e00, #1A1A1A);
   border-color: #1A1A1A;
   width: 225px;
+  animation: animate 3s linear infinite;
 }
 
 .sidenav a {
@@ -20,5 +21,11 @@
   place-items: center;
   align-content: center;
   height: 862px;
+}
+
+@keyframes animate {
+  100%{
+    filter: hue-rotate(360deg);
+  }
 }
 
