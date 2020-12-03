@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {CalendarOptions, DateSelectArg, EventClickArg, EventApi} from '@fullcalendar/angular';
 import { INITIAL_EVENTS, createEventId} from '../../../event-utils';
+
 @Component({
   selector: 'app-calendar',
   templateUrl: './calendar.component.html',

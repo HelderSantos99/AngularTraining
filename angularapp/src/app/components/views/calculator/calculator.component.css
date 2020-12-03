@@ -26,6 +26,8 @@
   outline: none;
   padding: 10px;
   font-size: 18px;
+  color: black;
+  background-color: rgb(213, 241, 219);
 }
 
 .calculator span {
@@ -40,7 +42,12 @@
 }
 
 .calculator span:active {
-  background: #74ff3b;
+  background: #25daf1;
+  color: #111;
+}
+
+.calculator span:hover {
+  background: #25daf1;
   color: #111;
 }
 

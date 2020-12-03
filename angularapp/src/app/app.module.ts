@@ -2,8 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import {FullCalendarModule} from '@fullcalendar/angular'; // the main connector. must go first
-import dayGridPlugin from '@fullcalendar/daygrid'; // a plugin
 import interactionPlugin from '@fullcalendar/interaction'; // a plugin
+import dayGridPlugin from '@fullcalendar/daygrid';
 
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -27,12 +27,11 @@ import { CalendarComponent } from './components/views/calendar/calendar.componen
 import { FormProgressComponent } from './components/views/formprogress/formprogress.component';
 import { CalculatorComponent } from './components/views/calculator/calculator.component';
 import { ImagesliderComponent } from './components/views/imageslider/imageslider.component';
-import { TictactoeComponent } from './components/views/tictactoe/tictactoe.component';
-
+import { TictactoeComponent } from './components/views/tictactoe/tictactoe.component'; // a plugin
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
-  dayGridPlugin,
-  interactionPlugin
+  interactionPlugin,
+  dayGridPlugin
 ]);
 
 

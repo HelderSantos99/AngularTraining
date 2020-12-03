@@ -20,7 +20,7 @@
   display: grid;
   place-items: center;
   align-content: center;
-  height: 862px;
+  height: 92vh;
 }
 
 @keyframes animate {
