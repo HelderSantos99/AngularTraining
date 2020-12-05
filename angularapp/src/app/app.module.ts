@@ -13,6 +13,7 @@ import { MatListModule} from '@angular/material/list';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
@@ -62,7 +63,8 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     MatListModule,
     MatStepperModule,
     MatFormFieldModule,
-    FullCalendarModule // register FullCalendar with you app
+    FullCalendarModule,
+    MatInputModule // register FullCalendar with you app
   ],
   providers: [],
   bootstrap: [AppComponent]

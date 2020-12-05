@@ -1,6 +1,6 @@
 full-calendar {
   width: 750px;
-  background: linear-gradient(to right, #1e3c72, #2a5298);
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   color: white;
   padding: 25px;
   border-radius: 10px;
@@ -19,7 +19,7 @@ full-calendar {
   border-radius: 10px;
   color: white;
   line-height: 1.5;
-  background: linear-gradient(to right, #1e3c72, #2a5298);
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   border-left: 1px solid #405861;
   height: 620px;
   margin-top: 46px;
