@@ -1,2 +1,2 @@
 # AngularTraining
-- Aplicação Angular para prática de JS
+- Aplicação Angular para prática de TS
