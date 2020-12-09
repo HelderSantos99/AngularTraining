@@ -1,4 +1,4 @@
-import { TictactoeComponent } from './components/views/tictactoe/tictactoe.component';
+import { BoardComponent } from './components/views/board/board.component';
 import { ImagesliderComponent } from './components/views/imageslider/imageslider.component';
 import { FormProgressComponent } from './components/views/formprogress/formprogress.component';
 import { CalendarComponent } from './components/views/calendar/calendar.component';
@@ -42,7 +42,7 @@ const routes: Routes = [
   },
   {
     path: 'tictactoe',
-    component: TictactoeComponent
+    component: BoardComponent
   }
 ];
 

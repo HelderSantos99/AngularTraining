@@ -28,7 +28,8 @@ import { CalendarComponent } from './components/views/calendar/calendar.componen
 import { FormProgressComponent } from './components/views/formprogress/formprogress.component';
 import { CalculatorComponent } from './components/views/calculator/calculator.component';
 import { ImagesliderComponent } from './components/views/imageslider/imageslider.component';
-import { TictactoeComponent } from './components/views/tictactoe/tictactoe.component'; // a plugin
+import { SquareComponent } from './components/views/square/square.component';
+import { BoardComponent } from './components/views/board/board.component'; // a plugin
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   interactionPlugin,
@@ -49,7 +50,8 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     FormProgressComponent,
     CalculatorComponent,
     ImagesliderComponent,
-    TictactoeComponent
+    SquareComponent,
+    BoardComponent
   ],
   imports: [
     BrowserModule,
@@ -64,7 +66,7 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     MatStepperModule,
     MatFormFieldModule,
     FullCalendarModule,
-    MatInputModule // register FullCalendar with you app
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

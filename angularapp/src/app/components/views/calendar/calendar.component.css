@@ -1,5 +1,5 @@
 full-calendar {
-  width: 750px;
+  width: 600px;
   background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   color: white;
   padding: 25px;
@@ -16,12 +16,12 @@ full-calendar {
 
 .demo-app-sidebar {
   width: 300px;
-  border-radius: 10px;
-  color: white;
+  border-radius: 5px;
+  color: black;
   line-height: 1.5;
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  background: #f8f663;
   border-left: 1px solid #405861;
-  height: 620px;
+  height: 400px;
   margin-top: 46px;
 }
 
