@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-board',
   templateUrl: './board.component.html',
@@ -26,7 +27,7 @@ export class BoardComponent implements OnInit {
 
   // tslint:disable-next-line:typedef
   get player() {
-    return this.xIsNext ? 'X' : 'O';
+    return this.xIsNext ? 'X' : 'O'; // condicional operator: caso seja true o jogador é X, caso seja falso é O
   }
 
   // tslint:disable-next-line:typedef
@@ -64,6 +65,7 @@ export class BoardComponent implements OnInit {
       }
     }
     return null;
+
   }
 
 }

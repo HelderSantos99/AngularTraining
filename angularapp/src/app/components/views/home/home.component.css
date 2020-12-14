@@ -9,12 +9,15 @@
 .home {
   background: linear-gradient(to right, #009fff, #ec2f4b);
   width: 1000px;
-  height: 80px;
-  font-size: 3rem;
+  font-size: 2rem;
   padding: 25px;
   align-items: flex-end;
   align-content: center;
   animation: animate 2s linear infinite;
+}
+
+.checked {
+  font-size: 2rem;
 }
 
 @keyframes animate {

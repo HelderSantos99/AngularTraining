@@ -1,0 +1,30 @@
+<mat-card class="home mat-elevation-z3">
+  <mat-card-title class="title">
+      Calculador de IVA (Imposto Valor Acrescentado)
+  </mat-card-title>
+    <ol>
+      <li class="mat-form-field--inline">
+        <mat-form-field>
+          <mat-label>Valor (€)</mat-label>
+          <input matInput type="number" [(ngModel)]="basevalue">
+          <button mat-button *ngIf="basevalue" matSuffix mat-icon-button aria-label="Clear" (click)="basevalue=''">
+            <mat-icon>close</mat-icon>
+          </button>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Taxa de IVA</mat-label>
+          <mat-select [(value)]="selectedIva">
+            <mat-option *ngFor="let option of ivas" [value]="option.value">
+              {{option.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </li>
+        <button mat-raised-button color="warn" (click)="calculateIVA()">Calcular IVA</button>
+  </ol>
+  <h3 *ngIf="ivavalue">Valor do IVA: {{ivavalue}} €</h3>
+</mat-card>
+
+
+
+

@@ -1,3 +1,4 @@
+import { TaxasComponent } from './components/views/taxas/taxas.component';
 import { BoardComponent } from './components/views/board/board.component';
 import { ImagesliderComponent } from './components/views/imageslider/imageslider.component';
 import { FormProgressComponent } from './components/views/formprogress/formprogress.component';
@@ -43,6 +44,10 @@ const routes: Routes = [
   {
     path: 'tictactoe',
     component: BoardComponent
+  },
+  {
+    path: 'taxas',
+    component: TaxasComponent
   }
 ];
 
