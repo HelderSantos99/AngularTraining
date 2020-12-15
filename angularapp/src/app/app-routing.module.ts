@@ -1,3 +1,4 @@
+import { DogsapiComponent } from './components/views/dogsapi/dogsapi.component';
 import { TaxasComponent } from './components/views/taxas/taxas.component';
 import { BoardComponent } from './components/views/board/board.component';
 import { ImagesliderComponent } from './components/views/imageslider/imageslider.component';
@@ -48,6 +49,10 @@ const routes: Routes = [
   {
     path: 'taxas',
     component: TaxasComponent
+  },
+  {
+    path: 'dogsapi',
+    component: DogsapiComponent
   }
 ];
 

@@ -21,8 +21,9 @@
         </mat-form-field>
       </li>
         <button mat-raised-button color="warn" (click)="calculateIVA()">Calcular IVA</button>
+        <h3 class="h3" *ngIf="ivavalue">Valor do IVA: {{ivavalue}} €</h3>
   </ol>
-  <h3 *ngIf="ivavalue">Valor do IVA: {{ivavalue}} €</h3>
+
 </mat-card>
 
 

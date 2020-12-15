@@ -34,7 +34,8 @@ import { CalculatorComponent } from './components/views/calculator/calculator.co
 import { ImagesliderComponent } from './components/views/imageslider/imageslider.component';
 import { SquareComponent } from './components/views/square/square.component';
 import { BoardComponent } from './components/views/board/board.component';
-import { TaxasComponent } from './components/views/taxas/taxas.component'; // a plugin
+import { TaxasComponent } from './components/views/taxas/taxas.component';
+import { DogsapiComponent } from './components/views/dogsapi/dogsapi.component'; // a plugin
 
 FullCalendarModule.registerPlugins([
   // register FullCalendar plugins
@@ -58,6 +59,7 @@ FullCalendarModule.registerPlugins([
     SquareComponent,
     BoardComponent,
     TaxasComponent,
+    DogsapiComponent,
   ],
   imports: [
     BrowserModule,

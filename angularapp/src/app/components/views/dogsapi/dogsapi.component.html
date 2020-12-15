@@ -1,0 +1,17 @@
+<div class="start">
+<h2>Raças de cães - API</h2>
+  <mat-form-field>
+    <mat-label>Raça</mat-label>
+    <mat-select [(value)]="selectedDog">
+      <mat-option *ngFor="let option of dogs" [value]="option.value">
+        {{option.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <!-- <h3 class="h3" *ngIf="selectedDog">Raça: {{selectedDog}}</h3> -->
+  <button mat-raised-button color="warn" class="btn" (click)="getRandomImage()">Mostrar</button>
+</div>
+  <div class="dogdiv">
+    <img id="dogImage" class="dog">
+    <button mat-raised-button color="basic" (click)="getRandomImage()">Próximo >>></button>
+  </div>
