@@ -25,6 +25,7 @@
     "@fullcalendar/daygrid": "^5.4.0",
     "@fullcalendar/interaction": "^5.4.0",
     "@fullcalendar/timegrid": "^5.4.0",
+    "ng-sidebar": "^9.4.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"

@@ -18,6 +18,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatIconModule } from '@angular/material/icon';
 import { FormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
+import { SidebarModule } from 'ng-sidebar';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
@@ -78,7 +79,8 @@ FullCalendarModule.registerPlugins([
     MatCheckboxModule,
     MatIconModule,
     FormsModule,
-    MatSelectModule
+    MatSelectModule,
+    SidebarModule
   ],
   providers: [],
   bootstrap: [AppComponent],

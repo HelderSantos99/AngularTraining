@@ -1,7 +1,7 @@
 .sidenav {
   background: linear-gradient(to right, #8e0e00, #1A1A1A);
   border-color: #1A1A1A;
-  width: 225px;
+  width: 230px;
   animation: animate 3s linear infinite;
 }
 
@@ -27,5 +27,18 @@
   100%{
     filter: hue-rotate(360deg);
   }
+}
+
+#close {
+  cursor: pointer;
+}
+
+#menu {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 35px;
+  filter: drop-shadow( 1px 1px 8px rgba(255, 255, 255, 0.719));
 }
 

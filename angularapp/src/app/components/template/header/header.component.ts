@@ -12,4 +12,8 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  togglesidebar(): void {
+    console.log('ola meu puto');
+  }
+
 }

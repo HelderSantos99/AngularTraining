@@ -1,5 +1,5 @@
 <mat-sidenav-container class="container">
-  <mat-sidenav class="sidenav" mode="side" opened fixedInViewport="true" fixedTopGap="50">
+  <mat-sidenav class="sidenav" mode="side" [(opened)]="opened" fixedTopGap="50">
       <mat-nav-list class="nav-list">
           <a mat-list-item routerLink="/">
               <i class="material-icons">home</i>
@@ -44,6 +44,7 @@
       </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content class="content">
+      <i class="material-icons" (click)="opened=!opened" id="menu">menu</i>
       <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
